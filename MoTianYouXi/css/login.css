@@ -1,0 +1,259 @@
+*{
+	padding: 0;
+	margin: 0;
+	list-style: none;
+	font-size: 12px;
+}
+input,button{
+	outline: none;
+	border: none;
+}
+html,body{
+	height: 100%;
+	width: 100%;
+	background: url('../images/bg.png') no-repeat;
+	background-size: 100% 100%;
+	overflow: hidden;
+}
+.container{
+	width: 1200px;
+	height: 100%;
+	margin: 0 auto;
+}
+#header{
+	box-sizing: border-box;
+	height: 15%;
+	padding-top: 20px;
+	max-height: 130px;
+}
+#logo{
+	height: 41px;
+	width: 231px;
+	background: url(../images/logo.png) no-repeat;
+	float: left;
+}
+#icons{
+	float: right;
+	width: 340px;
+	height: 100%;	
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+}
+#icons .icon{
+	width: 60px;
+	height: 60px;
+	margin-bottom: 10px;
+	cursor: pointer;
+}
+#icons .text{
+	width: 100%;
+	text-align: center;
+	color: #fff;
+}
+#Android{
+	background: url(../images/Android.png) no-repeat;
+	background-size: 100% 100%;
+}
+#ios{
+	background: url(../images/ios.png) no-repeat;
+	background-size: 100% 100%;
+}
+#pc{
+	background: url(../images/pc.png) no-repeat;
+	background-size: 100% 100%;
+}
+#Android:hover,
+#ios:hover,
+#pc:hover{
+	background-color: #fff;
+	border-radius: 50%;
+}
+/*main*/
+#main{
+	box-sizing: border-box;
+	margin-top: 20px;
+	height: 75%;
+	max-height: 700px;
+	display: flex;
+	flex-direction: column;
+}
+#login{
+	box-sizing: border-box;
+	height: 80%;
+	max-height: 540px;
+	background: url(../images/loginBg.png) no-repeat;
+	background-size: 100% 100%;
+	position: relative;
+	bottom: 500px;
+	animation: down 2s forwards;
+}
+#login .login-box{
+	box-sizing: border-box;
+	height: 100%;
+	width: 540px;
+	float: right;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+#login .title{
+	font-size: 24px;
+	color: #546078;
+	font-weight: bold;
+	margin-bottom: 30px;
+/*	animation: down 1s forwards;*/
+}
+#login .animate{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+/*	animation: bilibili 2s;*/
+}
+#user,
+#password{
+	width: 260px;
+	height: 40px;
+	line-height: 40px;
+	border: none;
+	border-bottom: 1px solid #cccbbe;
+	margin: 20px 0;
+	font-size: 20px;
+	text-align: center;
+	background: url('../images/user.png') left center no-repeat;
+}
+#password{
+	background: url('../images/password.png') left center no-repeat;
+}
+#loginin{
+	margin-top: 20px;
+	width: 240px;
+	height: 45px;
+	line-height: 45px;
+	text-align: center;
+	border-radius: 22.5px;
+	background: #ffaa0d;
+	color: #fff;
+	cursor: pointer;
+	font-size: 20px;
+	font-weight: bold;
+}
+#loginin:hover,
+#line .right .open:hover{
+	background:#cd8f1d;
+}
+#line{
+	box-sizing: border-box;
+	height: 20%;
+	max-height: 160px;
+	margin-top: 15px;
+	background: #000;
+	display: flex;
+}
+#line .left{
+	flex:7;
+	padding: 15px;
+	display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+#line .left .line{
+	width: 49%;
+	height: 50%;
+	display: flex;
+	align-items: center;
+	box-sizing: border-box;
+	padding: 10px;
+}
+#line .left .line-bg{
+	width: 30px;
+	height: 30px;
+	background: url(../images/lineBlue.png) no-repeat;
+	background-size: 100% 100%;
+	margin-right: 20px;
+}
+#line .left .line-green{
+	background-image: url(../images/lineGreen.png); 
+}
+#line .left .line-red{
+	background-image: url(../images/lineRed.png); 
+}
+#line .left .line-title{
+	font-size: 14px;
+	margin-right: 30px;
+}
+#line .left .title-blue{
+	color: #576c7e;
+}
+#line .left .title-green{
+	color: #adbf86;
+}
+#line .left .title-red{
+	color: #ae7a86;
+}
+#line .left .ms{
+	display: flex;
+	width: 200px;
+	height: 30px;
+	justify-content: space-between;
+}
+#line .left .ms div{
+	width: 5px;
+	height: 100%;
+}
+#line .left .ms .msDark{
+	background: #948b8b;
+}
+#line .left .ms .msLight{
+	background: #fff;
+}
+#line .right{
+	flex:3;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+#line .right .open{
+	width: 70%;
+	height: 50px;
+	line-height: 50px;
+	background: #ffaa0d;
+	border-radius: 25px;
+	text-align: center;
+	color: #fff;
+	font-size: 18px;
+	cursor: pointer;
+}
+#footer{
+	height: 10%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	max-height: 140px;
+	color: #fff;
+	font-size: 16px;
+}
+
+@keyframes bilibili{
+	0%{
+		transform: rotateX(45deg);
+	}
+	33%{
+		transform: rotateX(0deg);
+	}
+	66%{
+		transform: rotateX(-45deg);
+	}
+	100%{
+		transform: rotateX(0deg);
+	}	
+}
+
+@keyframes down{
+	100%{
+		bottom:  0;
+	}
+}
